@@ -340,3 +340,76 @@ nav a{
     border-radius: 10px;
 }
 
+/* Team Section */
+
+#team{
+    padding: 70px 30px;
+}
+
+#team-text{
+    text-align: center;
+    line-height: 1;
+}
+
+#team-text h3{
+    font-size: 40px;
+    font-weight: 300;
+    color: var(--dark-grey);
+}
+
+#team-text p{
+    font-size: 18px;
+    font-weight: 100;
+}
+
+#team-boxes{
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 30px;
+}
+
+
+.team-box{
+    position: relative;
+  
+}
+
+.team-box-text{
+   text-align: center;
+   line-height: 0.8;
+   
+}
+
+.team-box-text > .name {
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.team-box-text > .role {
+    font-size: 20px;
+    font-weight: 200;   
+    color: #707070;
+}
+
+.team-box-socials{
+    visibility: hidden;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    margin-top: -70px;
+}
+
+.social-btn{
+    background-color: var(--primary);
+    color: white;
+    border-radius: 50%;
+    padding: 15px;
+    margin-right: 5px;
+
+}
+
+.team-box:hover .team-box-socials{
+    visibility: visible;
+    transform: translateY(30%);
+    transition: 1s;
+}
