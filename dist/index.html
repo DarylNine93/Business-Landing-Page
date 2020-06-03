@@ -1,12 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <script defer src="fontawesome/js/all.js"></script> 
+    <link rel="stylesheet" href="libs/OwlCarousel/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="libs/OwlCarousel/dist/assets/owl.theme.default.min.css">
+    <script defer src="fontawesome/js/all.js"></script>
+    <script src="JS/jquery3.4.1.js"></script>
     <title>Startup</title>
 </head>
+
 <body>
     <header id="header">
         <nav>
@@ -56,7 +61,7 @@
                     <h4>Mobile Design</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor.</p>
                 </div>
-                
+
             </div>
         </section>
         <section id="about-us">
@@ -64,7 +69,8 @@
             <div id="about-box2">
                 <p class="about-text">About Us</p>
                 <p id="about-title">Empowering individuals</p>
-                <p class="about-text">Efficiently unleash cross-media tour function information without cross action media value. Quickly maximize timely deliverables for real-time schemas.</p>
+                <p class="about-text">Efficiently unleash cross-media tour function information without cross action
+                    media value. Quickly maximize timely deliverables for real-time schemas.</p>
                 <p class="about-text">“Function information without cross action media value.</p>
                 <br>
                 <button class="hoover_btn">About Us</button>
@@ -73,7 +79,7 @@
         <section id="featured_works">
             <div id="featured_works_text">
                 <h3>Featured works</h3>
-                <p>Tour function information without cross action media value quickly</p> 
+                <p>Tour function information without cross action media value quickly</p>
                 <p>maximize timely deliverables.</p>
             </div>
             <div id="featured_boxes">
@@ -119,8 +125,8 @@
                 <h2>How we work</h2>
                 <p>“Function information without cross action media value.</p>
                 <p>Efficiently unleash cross-media tour function information without
-                cross action media value.Quickly maximize timely deliverables
-                for real-time schemas.</p>
+                    cross action media value.Quickly maximize timely deliverables
+                    for real-time schemas.</p>
                 <div class="video">
                     <a href="#" class="video_btn">
                         <i class="fas fa-play"></i>
@@ -129,15 +135,15 @@
                 </div>
             </div>
             <div class="work-box-2">
-                
+
             </div>
         </section>
         <section id="team">
             <div id="team-text">
                 <h3>Our Creative Team</h3>
-                <p>Tour function information without cross action media value quickly</p> 
+                <p>Tour function information without cross action media value quickly</p>
                 <p>maximize timely deliverables.</p>
-                
+
             </div>
             <div id="team-boxes">
                 <div class="team-box" id="team-box-1">
@@ -156,7 +162,7 @@
                     <div class="team-box-text">
                         <p class="name">Brandon Yeald</p>
                         <p class="role">Founder & CEO</p>
-                    </div>   
+                    </div>
                 </div>
                 <div class="team-box" id="team-box-2">
                     <img src="img/team2.jpg" class="team-image" alt="">
@@ -174,7 +180,7 @@
                     <div class="team-box-text">
                         <p class="name">Susan Webbs</p>
                         <p class="role">Graphics Designer</p>
-                    </div> 
+                    </div>
                 </div>
                 <div class="team-box" id="team-box-3">
                     <img src="img/team3.jpg" class="team-image" alt="">
@@ -214,8 +220,72 @@
                 </div>
             </div>
         </section>
+        <section id="testimonials">
+            <div class="testimonials-wrapper owl-carousel owl-theme">
+                <div class="testimonials-items">
+                    <img src="img/quote.svg" alt="" height="40px" width="40px">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, aut!</p>
+                    <div class="testimonials-img"></div>
+                    <div class="testimonials-author">
+                        <p>Matt Daemon</p>
+                        <p>Business Owner</p>
+                    </div>
+                    
+                </div>
+                <div class="testimonials-items">
+                    <img src="img/quote.svg" alt="" height="40px" width="40px">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, aut!</p>
+                    <div class="testimonials-img"></div>
+                    <div class="testimonials-author">
+                        <p>Matt Daemon</p>
+                        <p>Business Owner</p>
+                    </div>
+                </div>
+                <div class="testimonials-items">
+                    <img src="img/quote.svg" alt="" height="40px" width="40px">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, aut!</p>
+                    <div class="testimonials-img"></div>
+                    <div class="testimonials-author">
+                        <p>Matt Daemon</p>
+                        <p>Business Owner</p>
+                    </div>
+                </div>
+                <div class="testimonials-items">
+                    <img src="img/quote.svg" alt="" height="40px" width="40px">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, aut!</p>
+                    <div class="testimonials-img"></div>
+                    <div class="testimonials-author">
+                        <p>Matt Daemon</p>
+                        <p>Business Owner</p>
+                    </div>
+                </div>
+                <div class="testimonials-items">
+                    <img src="img/quote.svg" alt="" height="40px" width="40px">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, aut!</p>
+                    <div class="testimonials-img"></div>
+                    <div class="testimonials-author">
+                        <p>Matt Daemon</p>
+                        <p>Business Owner</p>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
     <footer></footer>
-
+    <script src="libs/OwlCarousel/dist/owl.carousel.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".owl-carousel").owlCarousel({
+                center: true,
+                margin: 10,
+                responsiveClass: true,
+                loop: true,
+                items: 1,
+                autoplay: true,
+                dots: true
+            });
+        });
+    </script>
 </body>
+
 </html>
